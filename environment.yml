@@ -17,3 +17,13 @@ dependencies:
   
   - pip:
       - octave_kernel       # Kernel Jupyter pour Octave
+      - numpy
+      - pandas
+      - scipy
+      - matplotlib
+      - astropy
+      - pyephem
+      - pyserial
+      - biopython
+      - sympy
+      - seaborn
