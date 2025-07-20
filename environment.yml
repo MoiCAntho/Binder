@@ -28,7 +28,9 @@ dependencies:
   - r-tidyverse             # Librairie de data science
   - r-ggplot2               # Pour les graphiques
 
-  # ---- Pour Julia et Fortran ----
+  # ---- Julia ----
+  - julia
+  
   # 🚫 Julia, BioJulia, Fortran nécessitent un Dockerfile ou un postBuild
 
 # Remarque : Julia, BioJulia, Fortran et BioPerl ne sont pas installables
