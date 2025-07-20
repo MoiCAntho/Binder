@@ -1,1 +1,6 @@
+#!/bin/bash
+# Installer le kernel Julia dans Jupyter
+julia -e 'using Pkg; Pkg.add("IJulia"); using IJulia; installkernel("Julia")'
+
+# Copie la configuration pour Octave
 cp .languages/Octave/octaverc ~/.octaverc
