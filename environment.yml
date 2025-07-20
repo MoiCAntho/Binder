@@ -1,0 +1,36 @@
+name: multi-kernel-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # ---- Python & outils scientifiques ----
+  - python=3.11
+  - pip
+  - jupyter
+  - notebook
+  - matplotlib
+  - numpy
+  - pandas
+  - scipy
+
+  # ---- Biopython ----
+  - pip:
+      - biopython
+
+  # ---- Octave + Kernel Jupyter ----
+  - octave                  # Langage Octave
+  - pip:
+      - octave_kernel       # Kernel Jupyter pour Octave
+
+  # ---- R + Kernel Jupyter ----
+  - r-base
+  - r-irkernel              # Kernel IR pour Jupyter
+  - r-tidyverse             # Librairie de data science
+  - r-ggplot2               # Pour les graphiques
+
+  # ---- Pour Julia et Fortran ----
+  # 🚫 Julia, BioJulia, Fortran nécessitent un Dockerfile ou un postBuild
+
+# Remarque : Julia, BioJulia, Fortran et BioPerl ne sont pas installables
+# directement via conda pour Binder. Il faut passer par un Dockerfile
+# ou des étapes manuelles via 'postBuild' et 'apt-get' (non recommandé si tu veux rester simple).
