@@ -8,18 +8,13 @@ dependencies:
   - pip
   - jupyter
   - notebook
-  -r requierments.txt
-
-  # ---- Octave + Kernel Jupyter ----
-  - octave                  # Langage Octave
-  - pip:
-      - octave_kernel       # Kernel Jupyter pour Octave
-
-  # ---- R + Kernel Jupyter ----
   - r-base
   - r-irkernel              # Kernel IR pour Jupyter
   - r-tidyverse             # Librairie de data science
   - r-ggplot2               # Pour les graphiques
-
-  # ---- Julia ----
   - julia
+  - octave                  # Langage Octave
+  
+  - pip:
+      -r requierments.txt
+      - octave_kernel       # Kernel Jupyter pour Octave
