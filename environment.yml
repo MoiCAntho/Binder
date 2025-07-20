@@ -10,10 +10,6 @@ dependencies:
   - notebook
   -r requierments.txt
 
-  # ---- Biopython ----
-  - pip:
-      - biopython
-
   # ---- Octave + Kernel Jupyter ----
   - octave                  # Langage Octave
   - pip:
@@ -27,9 +23,3 @@ dependencies:
 
   # ---- Julia ----
   - julia
-  
-  # 🚫 Julia, BioJulia, Fortran nécessitent un Dockerfile ou un postBuild
-
-# Remarque : Julia, BioJulia, Fortran et BioPerl ne sont pas installables
-# directement via conda pour Binder. Il faut passer par un Dockerfile
-# ou des étapes manuelles via 'postBuild' et 'apt-get' (non recommandé si tu veux rester simple).
