@@ -1,0 +1,12 @@
+## Désactiver le warning sur gnuplot
+warning("off", "Octave:graphics:gnuplot");
+
+## Forcer qt si possible
+toolkits = available_graphics_toolkits();
+if any(strcmp("qt", toolkits))
+    graphics_toolkit("qt");
+elseif any(strcmp("fltk", toolkits))
+    graphics_toolkit("fltk");
+else
+    graphics_toolkit("gnuplot");
+endif
