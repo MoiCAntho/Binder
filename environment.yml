@@ -16,5 +16,4 @@ dependencies:
   - octave                  # Langage Octave
   
   - pip:
-      -r requierments.txt
       - octave_kernel       # Kernel Jupyter pour Octave
